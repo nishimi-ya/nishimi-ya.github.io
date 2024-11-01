@@ -16,9 +16,25 @@ url = "https://github.com/nishimi-ya/"
 icon = "brand-github"
 
 [[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
+identifier = "bluesky"
+name = "Bluesky"
+url = "https://bsky.nishimiya.my.id"
 
 [social.params]
-icon = "brand-twitter"
+icon = "brand-bluesky"
+
+[[social]]
+identifier = "linktree"
+name = "Linktree"
+url = "https://linktr.ee/nishi.miya"
+
+[social.params]
+icon = "brand-linktree"
+
+[[social]]
+identifier = "youtube"
+name = "YouTube"
+url = "https://www.youtube.com/@nishimiya6540"
+
+[social.params]
+icon = "brand-youtube"
