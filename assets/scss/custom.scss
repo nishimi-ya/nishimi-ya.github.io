@@ -1,3 +1,86 @@
+.article-content figure.avatar {
+  display: block;
+  width: 10em;
+  height: 10em;
+  margin: 1em auto;
+  /* Center the figure */
+}
+
+.article-content figure.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  box-shadow: var(--shadow-l1);
+}
+
+.article-content h1 {
+  clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  /* Center the profiles container */
+  align-items: center;
+  /* Center the profiles container */
+  height: 70vh;
+  /* Ensure the container takes the full viewport height */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margin */
+}
+
+.profile {
+  width: 100%;
+  padding: 0;
+  /* Remove padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center the profile content */
+}
+
+.profile figure.avatar {
+  margin: 0 auto;
+  /* Center the figure within the profile */
+}
+
+.profile h1 {
+  text-align: center;
+  border-inline-start: 0;
+}
+
+h1.center-title,
+h2.center-title {
+  text-align: center;
+  border-inline-start: 0;
+}
+
+@include respond(md) {
+  .profiles {
+    flex-direction: row;
+  }
+
+  .profile {
+    width: 50%;
+  }
+}
+
 /*
-    You can add your own custom styles here.
+* {
+    user-select: none;
+}
+
+pre, code {
+    user-select: auto;
+}
 */

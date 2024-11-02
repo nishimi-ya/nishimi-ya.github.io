@@ -52,6 +52,10 @@ type = "tag-cloud"
 [widgets.homepage.params]
 limit = 10
 
+[[widgets.homepage]]
+type = "about-me"
+
+
 [[widgets.page]]
 type = "toc"
 
