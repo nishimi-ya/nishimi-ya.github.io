@@ -11,7 +11,11 @@ tags:
     - website
 weight: 1
 ---
+{{< youtube M_DPRIoaqyI >}}
 
 As of Saturday, 2 November 2024. I am embracing Hugo as my static website generator. It's all started with Cyan Nyan
-stream, look [here](https://www.youtube.com/watch?v=M_DPRIoaqyI). Previously, I always wrote my website with
-vanilla HTML/CSS but now im taking it easy with already made template by [CaiJimmy Hugo Theme Starter](https://github.com/CaiJimmy/hugo-theme-stack-starter).
+stream. Previously, I always wrote my website with
+vanilla HTML/CSS but now im taking it easy with a pre-made template by [CaiJimmy Hugo Theme Starter](https://github.com/CaiJimmy/hugo-theme-stack-starter).
+Very customizable with scss and there's neat feature called shortcodes which you can see the embedded youtube video above.
+
+
