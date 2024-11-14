@@ -1,215 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishimiya's Homepage</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Nishimiya's Homepage" />
-    <meta
-        property="og:description"
-        content="Welcome aboard to Nishimiya's base station."
-    />
-    <meta
-    property="og:image"
-    content="https://raw.githubusercontent.com/nishimi-ya/nishimi-ya.github.io/main/tenshi.png"
-/>
-    <meta name="author" content="Nishimiya" />
-    <meta
-    name="keywords"
-    content="libre, landing page, social, website"
-/>
-<meta property="og:url" content="https://nishimiya.my.id" />
-<meta property="og:type" content="website" />
-    <link rel="me" href="https://libre.fm/user/nishimiya"/>
-    <link rel="me" href="https://bsky.app/profile/nishimiya.my.id"/>
-    <link rel="me" href="https://github.com/nishimi-ya"/>
-    <link rel="me" href="https://mastodon.social/@Nishimiya"/>
-    
-    <link rel="shortcut icon" href="./favicon.ico"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishimiya's Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Nishimiya's Homepage" />
+  <meta property="og:description" content="Welcome aboard to Nishimiya's base station." />
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/nishimi-ya/nishimi-ya.github.io/main/tenshi.png" />
+  <meta name="author" content="Nishimiya" />
+  <meta name="keywords" content="libre, landing page, social, website" />
+  <meta property="og:url" content="https://nishimiya.my.id" />
+  <meta property="og:type" content="website" />
+  <meta name="fediverse:creator" content="@nishimiya@layer8.space">
+  <link rel="me" href="https://libre.fm/user/nishimiya" />
+  <link rel="me" href="https://bsky.app/profile/nishimiya.my.id" />
+  <link rel="me" href="https://github.com/nishimi-ya" />
+  <link rel="me" href="https://mastodon.social/@Nishimiya" />
+  <link rel="shortcut icon" href="./favicon.ico" />
 
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Body Styles */
-        body {
-            font-family: 'IBM Plex Mono', monospace;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #252323; /* Dark background by default */
-            color: #f5f5f5; /* Light text by default */
-            transition: background-color 0.3s, color 0.3s;
-        }
+    /* Body Styles */
+    body {
+      font-family: 'IBM Plex Mono', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #252323;
+      /* Dark background by default */
+      color: #f5f5f5;
+      /* Light text by default */
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-        /* Container */
-        .container {
-            max-width: 750px; /* Increased max-width for wider appearance */
-            padding: 15px;    /* Reduced padding */
-            text-align: left;
-        }
+    /* Container */
+    .container {
+      max-width: 750px;
+      /* Increased max-width for wider appearance */
+      padding: 15px;
+      /* Reduced padding */
+      text-align: left;
+    }
 
-        /* Headings */
-        h1 {
-            font-weight: 600;
-            font-size: 1.8em; /* Slightly smaller font size */
-            margin-bottom: 0.8em; /* Reduced margin for less space */
-        }
+    /* Headings */
+    h1 {
+      font-weight: 600;
+      font-size: 1.8em;
+      /* Slightly smaller font size */
+      margin-bottom: 0.8em;
+      /* Reduced margin for less space */
+    }
 
-        h2, h3 {
-            font-weight: 600;
-            font-size: 1.2em; /* Reduced font size for subheadings */
-            margin-top: 1em;
-            margin-bottom: 0.5em;
-        }
+    h2,
+    h3 {
+      font-weight: 600;
+      font-size: 1.2em;
+      /* Reduced font size for subheadings */
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
 
-        /* Paragraphs */
-        p {
-            font-size: 0.95em; /* Reduced font size for paragraphs */
-            line-height: 1.5em; /* Line height for better readability */
-            margin-bottom: 0.8em;
-        }
+    /* Paragraphs */
+    p {
+      font-size: 0.95em;
+      /* Reduced font size for paragraphs */
+      line-height: 1.5em;
+      /* Line height for better readability */
+      margin-bottom: 0.8em;
+    }
 
-        /* Links */
-        a {
-            color: #76baff; /* Light blue for links in dark mode */
-            text-decoration: none;
-        }
+    /* Links */
+    a {
+      color: #76baff;
+      /* Light blue for links in dark mode */
+      text-decoration: none;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    a:hover {
+      text-decoration: underline;
+    }
 
-        /* List Styling */
-        ul {
-            list-style-type: none;
-            padding-left: 1.5em;
-        }
+    /* List Styling */
+    ul {
+      list-style-type: none;
+      padding-left: 1.5em;
+    }
 
-        ul li::before {
-            content: "-"; /* Add dash before list items */
-            margin-right: 0.5em;
-            color: #76baff;
-        }
+    ul li::before {
+      content: "-";
+      /* Add dash before list items */
+      margin-right: 0.5em;
+      color: #76baff;
+    }
 
-        /* Toggle Switch */
-        .theme-toggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-            background-color: #eee;
-            border: none;
-            border-radius: 20px;
-            padding: 5px 10px;
-            color: #333;
-            font-size: 0.85em;
-            transition: background-color 0.3s;
-        }
+    /* Toggle Switch */
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      background-color: #eee;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 10px;
+      color: #333;
+      font-size: 0.85em;
+      transition: background-color 0.3s;
+    }
 
-        .theme-toggle.light {
-            background-color: #333;
-            color: #fff;
-        }
+    .theme-toggle.light {
+      background-color: #333;
+      color: #fff;
+    }
 
-        /* Light Mode */
-        .light-mode {
-            background-color: #f5f5f5;
-            color: #333;
-        }
+    /* Light Mode */
+    .light-mode {
+      background-color: #f5f5f5;
+      color: #333;
+    }
 
-        .light-mode a {
-            color: #007acc;
-        }
-    </style>
+    .light-mode a {
+      color: #007acc;
+    }
+  </style>
 </head>
+
 <body class="dark-mode"> <!-- Add dark-mode class by default -->
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle light" onclick="toggleTheme()">Light Mode</button>
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle light" onclick="toggleTheme()">Light Mode</button>
 
-    <!-- Main Container -->
-    <div class="container">
-      <h1># Welcome!</h1>
-      <p>Hello~ I'm <strong><a href="https://nishimiya.my.id/" class="h-card" style="color: pink;" rel="me">Nishimiya</a></strong>, and this is my base station on the web.</p>
-    
-      <p>In my free time, I write <a href="http://blog.nishimiya.my.id">blog post</a> about technologies, art;
-        decentralisation and promoting free software.</p>
-    
-      <p><a href="https://trakteer.id/nishi.miya/tip">Donate</a></p>
-    
-      <h2>## Social links and stuff</h2>
-      <p>Listed in order of preference.</p>
-      <ul>
-        <li>Bluesky: <a href="https://bsky.app/profile/nishimiya.my.id">@nishimiya.my.id</a></li>
-        <li>GitHub: <a href="https://github.com/nishimi-ya">nishimi-ya</a></li>
-        <li>Libre.fm: <a href="https://libre.fm/user/nishimiya">nishimiya</a></li>
-        <li>Blog: <a href="https://blog.nishimiya.my.id/">blog.nishimiya.my.id</a> · <a
-            href="https://blog.nishimiya.my.id/index.xml">RSS</a></li>
-        <li>Mastodon: <a href="https://mastodon.social/@Nishimiya">@Nishimiya@mastodon.social</a></li>
-        <li>Email: <a href="mailto:contact@nishimiya.my.id">contact@nishimiya.my.id</a></li>
-        <li>Matrix: @nishimiya:matrix.org</a></li>
-      </ul>
-    
-      <h2>## Projects</h2>
-    
-      <h3>### Linux</h3>
-      <ul>
-        <p>
-          <li><strong>Hyprland Dotfiles</strong><br>Personal dots collection for hyprland.<br>
-            <a href="https://github.com/nishimi-ya/hyprland-dotfiles">Repository</a>
-          </li>
-        </p>
-        <p>
-          <li><strong>Hyprland Bootstrap</strong><br>Automated installer bootstrap to install my personal dotfiles without hassle.<br>
-            <a href="https://github.com/nishimi-ya/hyprland-bootstrap/blob/main/LICENSE">UNLICENSE</a> · <a
-              href="https://github.com/nishimi-ya/hyprland-bootstrap">Repository</a>
-          </li>
-        </p>
-      </ul>
-    
-      <h3>### Web</h3>
-      <ul>
-        <p>
-          <li>
-            <strong>Shinosawa Hiro Tribute</strong><br>Simple website tribute for Shinosawa Hiro from Hatsuboshi Gakuen<br>
-            <a href="https://github.com/nishimi-ya/hiro-shinosawa">Repository</a> · <a
-              href="http://nishimiya.my.id/hiro-shinosawa/">Preview</a>
-          </li>
-        </p>
-        <p>
-          <li>
-            <strong>Tilde</strong><br>Start page to simplify access and search.<br>
-            <a href="https://github.com/nishimi-ya/hyprland-bootstrap/blob/main/LICENSE">UNLICENSE</a> · <a
-              href="https://github.com/nishimi-ya/tilde">Repository</a> · <a
-              href="http://tilde.nishimiya.my.id/">Preview</a>
-          </li>
-        </p>
-      </ul>
-      
-</div>
+  <!-- Main Container -->
+  <div class="container">
+    <h1># Welcome!</h1>
+    <p>Hello~ I'm <strong><a href="https://nishimiya.my.id/" class="h-card" style="color: pink;"
+          rel="me">Nishimiya</a></strong>, and this is my base station on the web.</p>
+
+    <p>In my free time, I write <a href="http://blog.nishimiya.my.id">blog post</a> about technologies, art;
+      decentralisation and promoting free software.</p>
+
+    <p><a href="https://trakteer.id/nishi.miya/tip">Donate</a></p>
+
+    <h2>## Social links and stuff</h2>
+    <p>Listed in order of preference.</p>
+    <ul>
+      <li>Bluesky: <a href="https://bsky.app/profile/nishimiya.my.id">@nishimiya.my.id</a></li>
+      <li>GitHub: <a href="https://github.com/nishimi-ya">nishimi-ya</a></li>
+      <li>Libre.fm: <a href="https://libre.fm/user/nishimiya">nishimiya</a></li>
+      <li>Blog: <a href="https://blog.nishimiya.my.id/">blog.nishimiya.my.id</a> · <a
+          href="https://blog.nishimiya.my.id/index.xml">RSS</a></li>
+      <li>Mastodon: <a href="https://layer8.space/@nishimiya">@nishimiya@layer8.space</a></li>
+      <li>Email: <a href="mailto:contact@nishimiya.my.id">contact@nishimiya.my.id</a></li>
+      <li>Matrix: @nishimiya:matrix.org</a></li>
+    </ul>
+
+    <h2>## Projects</h2>
+
+    <h3>### Linux</h3>
+    <ul>
+      <p>
+        <li><strong>Hyprland Dotfiles</strong><br>Personal dots collection for hyprland.<br>
+          <a href="https://github.com/nishimi-ya/hyprland-dotfiles">Repository</a>
+        </li>
+      </p>
+      <p>
+        <li><strong>Hyprland Bootstrap</strong><br>Automated installer bootstrap to install my personal dotfiles without
+          hassle.<br>
+          <a href="https://github.com/nishimi-ya/hyprland-bootstrap/blob/main/LICENSE">UNLICENSE</a> · <a
+            href="https://github.com/nishimi-ya/hyprland-bootstrap">Repository</a>
+        </li>
+      </p>
+    </ul>
+
+    <h3>### Web</h3>
+    <ul>
+      <p>
+        <li>
+          <strong>Shinosawa Hiro Tribute</strong><br>Simple website tribute for Shinosawa Hiro from Hatsuboshi
+          Gakuen<br>
+          <a href="https://github.com/nishimi-ya/hiro-shinosawa">Repository</a> · <a
+            href="http://nishimiya.my.id/hiro-shinosawa/">Preview</a>
+        </li>
+      </p>
+      <p>
+        <li>
+          <strong>Tilde</strong><br>Start page to simplify access and search.<br>
+          <a href="https://github.com/nishimi-ya/hyprland-bootstrap/blob/main/LICENSE">UNLICENSE</a> · <a
+            href="https://github.com/nishimi-ya/tilde">Repository</a> · <a
+            href="http://tilde.nishimiya.my.id/">Preview</a>
+        </li>
+      </p>
+    </ul>
+
+  </div>
 
 
-    <script>
-        // Theme Toggle Function
-        function toggleTheme() {
-            document.body.classList.toggle("light-mode");
-            const themeToggleButton = document.querySelector('.theme-toggle');
-            if (document.body.classList.contains("light-mode")) {
-                themeToggleButton.textContent = "Dark Mode";
-                themeToggleButton.classList.remove("light");
-            } else {
-                themeToggleButton.textContent = "Light Mode";
-                themeToggleButton.classList.add("light");
-            }
-        }
-    </script>
+  <script>
+    // Theme Toggle Function
+    function toggleTheme() {
+      document.body.classList.toggle("light-mode");
+      const themeToggleButton = document.querySelector('.theme-toggle');
+      if (document.body.classList.contains("light-mode")) {
+        themeToggleButton.textContent = "Dark Mode";
+        themeToggleButton.classList.remove("light");
+      } else {
+        themeToggleButton.textContent = "Light Mode";
+        themeToggleButton.classList.add("light");
+      }
+    }
+  </script>
 </body>
+
 </html>
