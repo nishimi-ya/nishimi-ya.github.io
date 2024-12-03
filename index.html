@@ -150,6 +150,10 @@
       /* Firefox */
       -ms-overflow-style: none;
       /* IE and Edge */
+      scroll-snap-type: x smooth; /* Changed from mandatory to smooth */
+      scroll-behavior: smooth;
+  /* Other styles */
+}
     }
 
     .rss-feed-container::-webkit-scrollbar {
@@ -245,7 +249,7 @@
 
     @media (min-width: 1024px) {
       .rss-feed-item {
-        flex: 0 0 30%;
+        flex: 0 0 40%;
         /* Show three items on desktop */
       }
     }
@@ -405,15 +409,6 @@
     loadRSSFeed().then(function () {
       truncateTitles();
     });
-
-    // Smooth horizontal scrolling for desktop
-    document.addEventListener('wheel', function (event) {
-      const rssContainer = document.getElementById("rss-feed");
-      if (rssContainer.contains(event.target)) {
-        event.preventDefault();
-        rssContainer.scrollLeft += event.deltaY;
-      }
-    }, {passive: false});
   </script>
 </body>
 
