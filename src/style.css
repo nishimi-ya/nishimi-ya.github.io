@@ -1,0 +1,242 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #252323;
+  color: #f5f5f5;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 750px;
+  padding: 15px;
+  text-align: left;
+  margin-top: 50px;
+  /* Space for fixed theme toggle */
+}
+
+/* Headings */
+h1 {
+  font-weight: 600;
+  font-size: clamp(1.5em, 4vw, 1.8em);
+  margin-bottom: 0.8em;
+  word-wrap: break-word;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+  font-size: clamp(1em, 3vw, 1.2em);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  word-wrap: break-word;
+}
+
+/* Paragraphs */
+p {
+  font-size: clamp(0.9em, 2.5vw, 0.95em);
+  line-height: 1.5;
+  margin-bottom: 0.8em;
+}
+
+/* Links */
+a {
+  color: #76baff;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* List Styling */
+ul {
+  list-style-type: none;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+  word-wrap: break-word;
+}
+
+ul li::before {
+  content: "-";
+  margin-right: 0.5em;
+  color: #76baff;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #eee;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: #333;
+  font-size: 0.85em;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.theme-toggle.light {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.light-mode a {
+  color: #007acc;
+}
+
+.rss-feed-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scroll-snap-type: x smooth;
+  /* Changed from mandatory to smooth */
+  scroll-behavior: smooth;
+  /* Other styles */
+}
+}
+
+.rss-feed-container::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.rss-feed-item {
+  background-color: #302f2f;
+  color: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  scroll-snap-align: start;
+  width: 100%;
+  min-height: 100px;
+  flex: 0 0 90%;
+  overflow: hidden;
+}
+
+.rss-feed-item a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.rss-feed-item h3 {
+  font-size: clamp(0.9em, 2.5vw, 1em);
+  margin-bottom: 8px;
+  color: #76baff;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.rss-feed-item p {
+  font-size: clamp(0.8em, 2vw, 0.9em);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.light-mode .rss-feed-item {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.light-mode .rss-feed-item h3 {
+  color: #007acc;
+}
+
+/* Scroll Indicators */
+.rss-feed-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.scroll-indicator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(118, 186, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  color: #76baff;
+  font-weight: bold;
+}
+
+.scroll-left {
+  left: 5px;
+}
+
+.scroll-right {
+  right: 5px;
+}
+
+/* Updated Media Queries */
+@media (min-width: 768px) {
+  .rss-feed-item {
+    flex: 0 0 45%;
+    /* Show two items on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .rss-feed-item {
+    flex: 0 0 40%;
+    /* Show three items on desktop */
+  }
+}
+
+/* Touch indicator for mobile */
+@media (max-width: 767px) {
+  .rss-feed-container::after {
+    content: '';
+    flex: 0 0 10px;
+    /* Creates space at the end to indicate more content */
+  }
+}
