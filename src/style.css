@@ -84,6 +84,7 @@ ul li::before {
 
 /* Theme Toggle */
 .theme-toggle {
+  font-family: 'IBM Plex Mono', monospace;
   position: fixed;
   top: 20px;
   right: 20px;
