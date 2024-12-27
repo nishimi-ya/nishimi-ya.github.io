@@ -133,7 +133,6 @@ ul li::before {
   scroll-behavior: smooth;
   /* Other styles */
 }
-}
 
 .rss-feed-container::-webkit-scrollbar {
   display: none;
